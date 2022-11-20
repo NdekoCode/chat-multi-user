@@ -17,6 +17,10 @@ const io = new Server(nodeServer);
 // FIXED : Se connecter au socket, on detecte quand un utilisateur se connecter
 io.on("connection", (socket) => {
   console.log("Socket connextion is initialized in backend");
+  socket.on("disconnect", () => {
+    console.log(" User disconnected");
+    socket.broadcast.emit("leaveUser", socket.pseudo);
+  });
   // Detecter quand un utilisateur se connecte ou se deconnecte
   socket.on("enter_pseudo", (pseudo) => {
     // On dit que la socket de mon utilisateur va avoir un s
