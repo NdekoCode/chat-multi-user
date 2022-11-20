@@ -17,5 +17,8 @@ app.get("/", (req, res, next) => {
 app.get("/login", (req, res, next) => {
   res.render("pages/login", { pageTitle: "Login page" });
 });
+app.get("/chat", (req, res, next) => {
+  res.render("pages/chat", { pageTitle: "Chat page" });
+});
 // ON EXPORT LE APP Pour l'utiliser coté serveur
 export default app;
