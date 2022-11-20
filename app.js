@@ -20,5 +20,8 @@ app.get("/login", (req, res, next) => {
 app.get("/chat", (req, res, next) => {
   res.render("pages/chat", { pageTitle: "Chat page" });
 });
+app.use((req, res, next) => {
+  res.status(404).render("pages/404", { pageTitle: "Page not Found" });
+});
 // ON EXPORT LE APP Pour l'utiliser coté serveur
 export default app;
