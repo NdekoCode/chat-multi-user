@@ -14,5 +14,8 @@ app.use(express.static(join(__dirname, "public"))); // On configure le dossier q
 app.get("/", (req, res, next) => {
   res.render("pages/index", { pageTitle: "Home page" });
 });
+app.get("/login", (req, res, next) => {
+  res.render("pages/login", { pageTitle: "Login page" });
+});
 // ON EXPORT LE APP Pour l'utiliser coté serveur
 export default app;

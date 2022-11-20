@@ -1,0 +1,50 @@
+<div class="md:h-screen bg-white relative flex flex-col justify-center items-center">
+    <div class="md:border md:border-gray-200 bg-white md:shadow-lg shadow-none rounded p-10">
+        <div class="flex flex-col items-center space-y-3">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="48px" height="48px"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g>
+                    <path style="opacity:0.976" fill="#1565c0"
+                        d="M 37.5,29.5 C 37.666,24.1563 37.4994,18.8229 37,13.5C 36.6924,12.6919 36.1924,12.0253 35.5,11.5C 26.888,10.5289 18.2214,10.1956 9.5,10.5C 9.17798,8.27759 9.84464,6.44425 11.5,5C 21.1667,4.33333 30.8333,4.33333 40.5,5C 41,5.5 41.5,6 42,6.5C 42.6667,13.5 42.6667,20.5 42,27.5C 40.8904,29.0368 39.3904,29.7035 37.5,29.5 Z" />
+                </g>
+                <g>
+                    <path style="opacity:0.993" fill="#2095f2"
+                        d="M 9.5,10.5 C 18.2214,10.1956 26.888,10.5289 35.5,11.5C 36.1924,12.0253 36.6924,12.6919 37,13.5C 37.4994,18.8229 37.666,24.1563 37.5,29.5C 37.822,31.7224 37.1554,33.5557 35.5,35C 27.5,35.3333 19.5,35.6667 11.5,36C 9.33333,38.1667 7.16667,40.3333 5,42.5C 4.33333,32.5 4.33333,22.5 5,12.5C 6.10963,10.9632 7.60963,10.2965 9.5,10.5 Z" />
+                </g>
+            </svg>
+            <span class="text-2xl font-semi-bold leading-normal">Connectez-vous</span>
+            <p class="leading-normal">En vous connectant vous accedez à la platforme</p>
+        </div>
+        <form class="my-8">
+            <div class="relative mb-2">
+                <input id="email"
+                    class="w-full rounded px-3 border border-gray-200 pt-5 pb-2 focus:border-blue-700 focus:ring-1 focus:ring-blue-700 focus:outline-none input active:outline-none"
+                    type="text" autofocus>
+                <label for="email"
+                    class="label absolute mt-2 ml-3 leading-tighter text-gray-600 text-base cursor-text">Email or
+                    phone</label>
+            </div>
+
+            <div class="relative mb-2">
+                <input id="password"
+                    class="w-full rounded px-3 border border-gray-200 pt-5 pb-2 focus:border-blue-700 focus:ring-1 focus:ring-blue-700 focus:outline-none input active:outline-none"
+                    type="text" autofocus>
+                <label for="password"
+                    class="label absolute mt-2 ml-3 leading-tighter text-gray-600 text-base cursor-text">Mot de passe
+                </label>
+            </div>
+            <div class="space-y-9">
+                <div>
+                    <a class="text-sm font-normal text-blue-500" href="#">Mot de passe oublier ?</a>
+                </div>
+                <div class="text-sm flex justify-between items-center">
+                    <a class="font-bold text-blue-500 py-2 px-2 rounded -ml-2 hover:bg-blue-50 hover:text-blue-700"
+                        href="#">Créer un compte ?</a>
+                    <button type="submit"
+                        class="py-3 px-6 rounded text-white btn bg-blue-500 hover:bg-blue-600">Valider</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
